@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="25dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên của bạn"
+        android:layout_margin="10dp"
+        android:id="@+id/txtName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập MSSV của bạn"
+        android:layout_margin="10dp"
+        android:id="@+id/txtMSSV"
+        />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Nhập tuổi của bạn"
+       android:layout_margin="10dp"
+       android:id="@+id/txtAge"
+       />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+    android:layout_gravity="start"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Giới tính:"
+            android:textSize="20sp"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:id="@+id/rdoBoy"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ"
+                android:id="@+id/rdoGirl"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_marginStart="28dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Sở thích:"
+            android:textSize="20sp"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Đá bóng"
+            android:id="@+id/chkFootball"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chơi game"
+            android:id="@+id/chkPlaygame"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu thông tin"
+        android:id="@+id/saveInformation"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Thông tin của bạn !"
+    android:textSize="20dp"
+    android:id="@+id/showResutl"
+    />
+
+</LinearLayout>
